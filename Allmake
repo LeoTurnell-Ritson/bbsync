@@ -1,9 +1,9 @@
 #!/bin/sh
 #------------------------------------------------------------------------------
 # =========                 |
-# \\      /  F ield         | foamTEX: Open Source CFD to laTeX
-#  \\    /   O peration     | Web: https://github.com/LeoTurnell-Ritson/foamTEX
-#   \\  /    A nd           | For copyright notice see file Copyright
+# \\      /  F ield         | like rsync but for blue bear & OpenFOAM
+#  \\    /   O peration     | Web: https://github.com/LeoTurnell-Ritson/bbsync
+#   \\  /    A nd           |
 #    \\/     M anipulation  |
 #------------------------------------------------------------------------------
 #
