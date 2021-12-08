@@ -35,7 +35,7 @@ bbsync is a wrapper for shh/rsync for use with [OpenFOAM](https://www.openfoam.c
    ```
 ### Running bbsync
 
-To run bbsync, first you should make of copy of and edit the example-bahrc file to fit the users blue bear environment, then source it. To check that the configuration is working try:
+To run bbsync, first you should make of copy of and edit the example-bahrc file to fit your blue bear environment, then source it. Additionaly you'll need to be connected to the blue bear severs. To check that the configuration is working try:
 
    ```sh
    bbsync -c 'echo Hello World!'
