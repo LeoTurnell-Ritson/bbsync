@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+# =========                 |
+# \\      /  F ield         | like rsync but for blue bear & OpenFOAM
+#  \\    /   O peration     | Web: https://github.com/LeoTurnell-Ritson/bbsync
+#   \\  /    A nd           |
+#    \\/     M anipulation  |
+#------------------------------------------------------------------------------
+#
+# Description
+#  example run-commands to source before using bbsync 
+#
+#------------------------------------------------------------------------------
+
+# name of user on blue bear
+export bbacc=$USER@bluebear.bham.ac.uk
+
+# path to project dir on blue bear
+export bbproject=/rds/projects/path/to/project
+
+# where OpenFOAM run dirs stored on blue bear
+export bbrun=$USER/run$WM_PROJECT-$WM_PROJECT_VERSION
+
+# where user written application dirs are stored on blue bear  
+export bbapp=$WM_PROJECT/ADD-$WM_PROJECT_VERSION/applications
+
+# where user written src dirs are stored on blue bear
+export bbsrc=$WM_PROJECT/ADD-$WM_PROJECT_VERSION/src
+
+# ----------------------------------------------------------------- end-of-file
