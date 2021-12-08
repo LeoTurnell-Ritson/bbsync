@@ -13,8 +13,8 @@ import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='wrapper for shh/rsync for use with OpenFOAM and blue bear')
-    parser.add_argument('--push', help='push from local to blue bear', nargs='+', required=False)
-    parser.add_argument('--pull', help='pull files from blue bear to local', nargs='+', required=False)
+    parser.add_argument('--push', help='push from local to blue bear, given local path(s)', nargs='+', required=False)
+    parser.add_argument('--pull', help='pull files from blue bear to local, given local path(s) to folder(s) or file(s) that also exist on the blue bear cluster', nargs='+', required=False)
     parser.add_argument('-a', '--absolute', help='use absolute path', required=False, action='store_true', default=False)
     parser.add_argument('-r', '--relative', help='use relative path (default)', required=False, action='store_true', default=False)
     parser.add_argument('-l', '--login', help='login to Blue Bear', required=False, action='store_true')
@@ -138,7 +138,7 @@ if __name__ == "__main__":
                         break
 
             if relative_bbpath == False:
-                print(parser.prog + ': warning: cannot find bbsync path for %s' %(local_path))
+                print(parser.prog + ': warning: cannot find bbsync path for %s, path of argument must contain either src/, applicatons/ or bbsync/' %(local_path))
             else:
                 os_command = '%s %s %s %s %s' %(ssh_pass, rsync, ssh, local_path, bbpath)
                 if args['verbose']:
@@ -177,7 +177,7 @@ if __name__ == "__main__":
                     break
 
         if relative_bbpath == False:
-            print(parser.prog + ': warning: cannot find bbsync path for %s' %(local_path))
+            print(parser.prog + ': warning: cannot find bbsync path for %s, path of argument must contain either src/, applicatons/ or bbsync/' %(local_path))
         else:
             os_command = '%s %s %s %s %s' %(ssh_pass, rsync, ssh, bbpath, local_path)
             if args['verbose']:
