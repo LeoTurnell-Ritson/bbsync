@@ -8,7 +8,7 @@
 
 ## About The Project
 
-bbsync is a wrapper for shh/rsync for use with [OpenFOAM](https://www.openfoam.com/) and [blue bear](https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/bluebear/index.aspx), application may be limited if your not using both these platforms. The fundamental idea is to be able to push and pull src, applications and folders in the OpenFOAM run directory to and from blue bear, using relative per-defined paths (see example-bashrc).
+bbsync is a wrapper for shh/rsync for use with [OpenFOAM](https://www.openfoam.com/) and [blue bear](https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/bluebear/index.aspx), application may be limited if your not using both these platforms. The fundamental idea is to be able to push and pull src, applications and folders in the OpenFOAM run directory to and from blue bear, using relative user-defined paths (see example-bashrc).
 
 ## Getting Started
 
