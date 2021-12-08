@@ -1,4 +1,10 @@
-<h3 align="center">foamTEX</h3>
+<h1 align="center">bbsync</h1>
+
+<p align="center">
+  wrapper for shh/rsync for use with OpenFOAM and blue bear
+  </p>
+</div>
+
 
 ## About The Project
 
