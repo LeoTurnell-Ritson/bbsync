@@ -1,0 +1,5 @@
+build/bbsync/*
+build/bbsync/localpycos/*
+dist/bbsync
+src/__pycache__/*
+bbsync.spec
